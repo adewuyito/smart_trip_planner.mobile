@@ -35,7 +35,7 @@ class ChatView extends ConsumerWidget {
             const SizedBox(height: 24),
 
             ChatInputField(
-              onSend: (value) {
+              onSend: (value) { // TODO: Implement chat feature
                 ref.read(chatProvider.notifier).state = [
                   ...ref.read(chatProvider),
                   ChatMessage(text: value, isMe: true),
