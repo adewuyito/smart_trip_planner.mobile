@@ -69,7 +69,7 @@ class HomeView extends HookConsumerWidget {
                           // TODO: REMOVE THIS PLACEHOLDER
                           final text =
                               "Bali next April, 3 people, mid-range budget, wanted to explore less populated areas, it should be a peaceful trip!";
-                          return GradientBorderContainer(label: text);
+                          return OfflineItenaryWidget(label: text);
                         },
                       ),
                     ],
