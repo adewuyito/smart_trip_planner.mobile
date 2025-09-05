@@ -3,7 +3,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:smart_trip_planner/presentation/shared/avater_widget.dart';
-import 'package:smart_trip_planner/presentation/shared/green_button.dart';
+import 'package:smart_trip_planner/presentation/shared/button_widget.dart';
 import 'package:smart_trip_planner/presentation/shared/offline_itenary_widget.dart';
 import 'package:smart_trip_planner/presentation/shared/prompt_input_widget.dart';
 

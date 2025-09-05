@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smart_trip_planner/core/constants/shadows.dart';
 
 class GradientBorderContainer extends StatelessWidget {
   const GradientBorderContainer({super.key, required this.label});
@@ -21,40 +22,7 @@ class GradientBorderContainer extends StatelessWidget {
           colors: [color1, color2, color3],
           stops: [0.0, 0.5, 1.0],
         ),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0x1A6B7F9C), // #6B7F9C1A
-            offset: Offset(0, 12),
-            blurRadius: 27,
-            spreadRadius: 0,
-          ),
-          BoxShadow(
-            color: Color(0x17D8BACF), // #D8BACF17
-            offset: Offset(0, 49),
-            blurRadius: 49,
-            spreadRadius: 0,
-          ),
-          BoxShadow(
-            color: Color(0x0DA2C0AA), // #A2C0AA0D
-            offset: Offset(0, 109),
-            blurRadius: 66,
-            spreadRadius: 0,
-          ),
-          BoxShadow(
-            color: Color(0x037E8696), // #7E869603
-            offset: Offset(0, 194),
-            blurRadius: 78,
-            spreadRadius: 0,
-          ),
-          BoxShadow(
-            color: Color(
-              0x00A4639D,
-            ), // #A4639D00 (fully transparent, no effect)
-            offset: Offset(0, 304),
-            blurRadius: 85,
-            spreadRadius: 0,
-          ),
-        ],
+        boxShadow: boxShadow1,
       ),
       child: Container(
         margin: const EdgeInsets.all(1),
