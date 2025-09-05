@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:smart_trip_planner/presentation/shared/avater_widget.dart';
 
 class ProfileView extends ConsumerWidget {
   const ProfileView({super.key});
@@ -79,20 +80,9 @@ class ProfileView extends ConsumerWidget {
                   Row(
                     spacing: 16,
                     children: [
-                      CircleAvatar(
-                        radius: 20,
-                        backgroundColor: Color(0xFF065F46),
-                        child: Center(
-                          child: Text(
-                            "T",
-                            style: GoogleFonts.inter(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 20,
-                            ),
-                          ),
-                        ),
-                      ),
+                      // Circular Profile View
+                      SAvaterWidget(),
+                     
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -183,3 +173,5 @@ class ProfileView extends ConsumerWidget {
     );
   }
 }
+
+

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_trip_planner/presentation/profile/profile_view.dart';
+import 'package:smart_trip_planner/presentation/home_view.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -7,7 +7,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: ProfileView()
+      home: HomeView()
     );
   }
 }
