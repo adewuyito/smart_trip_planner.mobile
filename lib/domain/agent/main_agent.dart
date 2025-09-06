@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:http/http.dart' as http;
 import 'package:smart_trip_planner/domain/entities/itinerary_entities.dart';
+import 'package:smart_trip_planner/config/env_config.dart';
 
 class AIAgent {
   final GenerativeModel _model;
@@ -166,8 +167,10 @@ Respond only with valid JSON matching the schema.
   }
 
   Future<List<String>> _performSearch(String query) async {
-    const serpApiKey =
-        '***REMOVED***'; // Replace with your actual key (store securely)
+    final serpApiKey = EnvConfig.serpApiKey;
+    if (serpApiKey.isEmpty) {
+      return ['Error: SERP_API_KEY not configured'];
+    }
     try {
       final uri = Uri.parse(
         'https://serpapi.com/search?engine=google&q=$query&api_key=$serpApiKey',

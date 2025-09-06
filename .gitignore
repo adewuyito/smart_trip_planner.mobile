@@ -55,3 +55,8 @@ macos/Runner/GoogleService-Info.plist
 ios/Runner/GoogleService-Info.plist
 # FVM
 .fvm/flutter_sdk
+
+# Environment variables (API keys, secrets)
+.env
+*.env
+!.env.example

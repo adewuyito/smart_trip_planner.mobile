@@ -3,11 +3,10 @@ import 'dart:convert';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:smart_trip_planner/domain/entities/itinerary_entities.dart';
 import 'package:smart_trip_planner/domain/usecase/ai_usecase.dart';
-
-
-const String apiKey = 'YOUR_GEMINI_API_KEY'; // TODO: Replace with secure storage (e.g., .env)
+import 'package:smart_trip_planner/config/env_config.dart';
 
 final itineraryProvider = StateNotifierProvider<ItineraryNotifier, ItineraryState>((ref) {
+  final apiKey = EnvConfig.geminiApiKey;
   final createUseCase = CreateItineraryUseCase(apiKey);
   final refineUseCase = RefineItineraryUseCase(apiKey);
   return ItineraryNotifier(createUseCase, refineUseCase);
