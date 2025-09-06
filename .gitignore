@@ -48,3 +48,10 @@ app.*.map.json
 
 # FVM Version Cache
 .fvm/
+
+# Firebase config files
+android/app/google-services.json
+macos/Runner/GoogleService-Info.plist
+ios/Runner/GoogleService-Info.plist
+# FVM
+.fvm/flutter_sdk
