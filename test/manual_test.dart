@@ -5,7 +5,7 @@
 
 // void main() async {
 
-//   final _agent = AIAgent('***REMOVED***');
+//   final _agent = AIAgent('AIzaSyA1q8N6V54g_TgRA_NWd2__HAyrY5t0Hbc');
 
 //   final stream =  _agent.generateItinerary(
 //     prompt: '5 days in Kyoto, solo, mid-range budget',

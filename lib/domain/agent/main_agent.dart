@@ -197,7 +197,7 @@ Respond only with valid JSON matching the schema.
   // Future<List<String>> _performSearch(String query) async {
   //   try {
   //     const serpAPIKEY =
-  //         "***REMOVED***"; // TODO: remove from here
+  //         "e3e511d3747d04a6bf2044871a362e60f30536c37e0aa947f3b4974b59f4a85e"; // TODO: remove from here
   //     final response = await http.get(
   //       Uri.parse(
   //         'https://serpapi.com/search?api_key=$serpAPIKEY&q=$query',
